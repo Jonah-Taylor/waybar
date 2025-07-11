@@ -54,10 +54,11 @@ window#waybar {
 #pulseaudio.microphone,
 #backlight,
 #network,
+#battery,
 #clock {
     background-color: transparent;
     color: #ffffff;
-    padding: 0 28px;
+    padding: 0 14px;
     margin: 0 2px;
 }
 

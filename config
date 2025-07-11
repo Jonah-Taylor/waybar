@@ -5,7 +5,7 @@
     "spacing": 4,
     "modules-left": ["sway/workspaces"],
     "modules-center": ["sway/window"],
-    "modules-right": ["pulseaudio#microphone", "pulseaudio", "backlight", "network", "clock"],
+    "modules-right": ["pulseaudio#microphone", "pulseaudio", "backlight", "battery", "network", "clock"],
     
     "sway/workspaces": {
         "disable-scroll": true,
@@ -58,6 +58,20 @@
     "backlight": {
         "device": "intel_backlight",
         "format": "☀️ {percent}%",
+        "tooltip": false
+    },
+
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": "🔌 {capacity}%",
+        "format-plugged": "🔌 {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", ""],
         "tooltip": false
     },
     
